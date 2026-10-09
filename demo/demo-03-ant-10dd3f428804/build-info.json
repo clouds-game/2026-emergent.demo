@@ -1,0 +1,11 @@
+{
+  "source_commit": "81533dac99af784a43bf3d57cf7df3933d1ddb22",
+  "source_branch": "demo/03-ant",
+  "built_at": "2026-10-09T14:15:32.388Z",
+  "godot_version": "4.7.2",
+  "twodog_version": "4.7.2.105",
+  "demo_title": "蚁路自生",
+  "demo_summary": "用短箭头帮助侦察，成功返程长出运输路线；食源迁移后引导蚁群重新组织。",
+  "demo_id": "03-ant",
+  "challenge_title": "侦察与迁移"
+}

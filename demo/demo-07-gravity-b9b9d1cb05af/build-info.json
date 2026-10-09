@@ -1,0 +1,11 @@
+{
+  "source_commit": "c9a3dff17f1da0ace4c99b274f76be8cb3a3c885",
+  "source_branch": "demo/07-gravity",
+  "built_at": "2026-10-09T14:14:54.804Z",
+  "godot_version": "4.7.2",
+  "twodog_version": "4.7.2.105",
+  "demo_title": "引力花园",
+  "demo_summary": "用三口引力井绕过吞噬岩石，保留布局与损失痕迹，每次只改一处比较。",
+  "demo_id": "07-gravity",
+  "challenge_title": "绕石成河"
+}

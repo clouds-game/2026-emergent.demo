@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c19">
+  <title>涌现 · 游戏试玩</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #101c19; color: #e3f0df; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+    body { overflow: hidden; touch-action: none; }
+    #canvas { display: block; border: 0; }
+    #canvas:focus { outline: none; }
+    #status, noscript { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: #101c19; }
+    .loading { width: min(440px, calc(100% - 48px)); text-align: center; }
+    .seed { width: 84px; height: 84px; margin-bottom: 24px; }
+    .eyebrow { color: #9fb3a9; font-size: 13px; letter-spacing: .2em; }
+    #status-title { margin: 20px 0 24px; font-size: clamp(24px, 6vw, 30px); font-weight: 500; }
+    .progress-row { display: flex; align-items: center; gap: 16px; }
+    #status-progress { flex: 1; min-width: 0; height: 8px; border: 0; border-radius: 8px; overflow: hidden; appearance: none; background: #294336; accent-color: #c0e4b8; }
+    #status-progress::-webkit-progress-bar { background: #294336; }
+    #status-progress::-webkit-progress-value { background: #c0e4b8; border-radius: 8px; }
+    #status-progress::-moz-progress-bar { background: #c0e4b8; border-radius: 8px; }
+    #status-percent { width: 48px; color: #c0e4b8; font-size: 15px; font-variant-numeric: tabular-nums; text-align: right; }
+    #status-detail { min-height: 42px; margin: 16px 0 0; color: #9fb3a9; font-size: 14px; line-height: 1.6; }
+    #status-notice { margin: 16px 0; color: #e6b6b6; font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; white-space: pre-line; }
+    #status-retry { margin-top: 20px; border: 1px solid #365247; border-radius: 8px; padding: 12px 28px; background: #172821; color: #e3f0df; font: inherit; cursor: pointer; }
+    #status-retry:hover { background: #294336; }
+    #status-retry:focus-visible { outline: 2px solid #c0e4b8; outline-offset: 4px; }
+    [hidden] { display: none !important; }
+    noscript { z-index: 2; padding: 24px; text-align: center; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas">浏览器不支持游戏画布。</canvas>
+  <noscript>请启用 JavaScript 后重新打开游戏。</noscript>
+  <div id="status">
+    <div class="loading">
+      <svg class="seed" viewBox="0 0 84 84" aria-hidden="true">
+        <path d="M42 70V36M42 48L23 29M42 38L62 18" fill="none" stroke="#7faf92" stroke-width="2"/>
+        <circle cx="23" cy="29" r="9" fill="#365247"/>
+        <circle cx="62" cy="18" r="11" fill="#c0e4b8"/>
+        <circle cx="42" cy="70" r="5" fill="#9fcbad"/>
+      </svg>
+      <div class="eyebrow">涌现 / EMERGENT</div>
+      <h1 id="status-title" aria-live="polite">准备下载游戏</h1>
+      <div class="progress-row">
+        <progress id="status-progress" max="100" value="0" aria-label="游戏下载进度"></progress>
+        <span id="status-percent">0%</span>
+      </div>
+      <p id="status-detail">一个念头，正在生长。</p>
+      <div id="status-notice" role="alert" hidden></div>
+      <button id="status-retry" type="button" hidden>重新加载</button>
+    </div>
+  </div>
+  <script src="loading.js?v=1dfba6a3fd0d"></script>
+  <script src="cache-bootstrap.js?v=86ce0dde1fb5"></script>
+  <script src="game-boot.js?v=9fa3c5209b93"></script>
+</body>
+</html>

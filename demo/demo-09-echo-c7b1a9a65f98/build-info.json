@@ -1,0 +1,11 @@
+{
+  "source_commit": "b57605c209e4b249a29a4880b40bcc220d55f636",
+  "source_branch": "demo/09-echo",
+  "built_at": "2026-10-09T14:14:50.457Z",
+  "godot_version": "4.7.2",
+  "twodog_version": "4.7.2.105",
+  "demo_title": "回声协奏",
+  "demo_summary": "录下唯一回声完成接通、中继与折返，用时间轴安排现在的脉冲；可保留录音重试或切换旧关。",
+  "demo_id": "09-echo",
+  "challenge_title": "折返接力"
+}

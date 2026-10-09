@@ -1,0 +1,11 @@
+{
+  "source_commit": "7ad6f20bc255ec68e5ede6d6250ae83e3879d2fe",
+  "source_branch": "demo/01-flock",
+  "built_at": "2026-10-09T14:15:18.265Z",
+  "godot_version": "4.7.2",
+  "twodog_version": "4.7.2.105",
+  "demo_title": "群鸟归航",
+  "demo_summary": "看清受引导的鸟与群体尾迹，预判风暴，在有限能量下带两支鸟群归航。",
+  "demo_id": "01-flock",
+  "challenge_title": "双翼归航"
+}

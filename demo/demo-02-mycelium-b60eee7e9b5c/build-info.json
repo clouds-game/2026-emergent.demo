@@ -1,0 +1,11 @@
+{
+  "source_commit": "c7d3a236ff24f1430b3c2a9fd8b59d544ce6690a",
+  "source_branch": "demo/02-mycelium",
+  "built_at": "2026-10-09T14:15:14.218Z",
+  "godot_version": "4.7.2",
+  "twodog_version": "4.7.2.105",
+  "demo_title": "菌丝织网",
+  "demo_summary": "绕过贫瘠土，用有限孢子搭桥，把水分配给生长与连通后的养分回流。",
+  "demo_id": "02-mycelium",
+  "challenge_title": "贫瘠绕流"
+}
